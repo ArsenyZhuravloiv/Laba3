@@ -1,1 +1,35 @@
+body {
+    font-family: Arial;
+    text-align: center;
+}
 
+#game {
+    display: grid;
+    grid-template-columns: repeat(10, 30px);
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.cell {
+    width: 30px;
+    height: 30px;
+    border: 1px solid #555;
+    cursor: pointer;
+    background: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.open {
+    background: #eee;
+    cursor: default;
+}
+
+.mine {
+    background: red;
+}
+
+.flag {
+    background: yellow;
+}
